@@ -6,8 +6,8 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-bash "apt-get-update" do
-  code "apt-get update"
+execute "apt-get-update" do
+  command "apt-get update"
 end
 
 libraries = ["clang", "libicu-dev"]
@@ -17,9 +17,10 @@ libraries.each do |lib|
   end
 end
 
+swift_snapshot = "swift-2.2-SNAPSHOT-2016-02-08-a-ubuntu15.10"
 filenames = [
-  "swift-2.2-SNAPSHOT-2016-02-08-a-ubuntu15.10.tar.gz",
-  "swift-2.2-SNAPSHOT-2016-02-08-a-ubuntu15.10.tar.gz.sig",
+  "#{swift_snapshot}.tar.gz",
+  "#{swift_snapshot}.tar.gz.sig"
 ]
 
 filenames.each do |filename|
@@ -33,8 +34,8 @@ bash "setup" do
   code <<-EOH
     wget -q -O - https://swift.org/keys/all-keys.asc | gpg --import -
     gpg --keyserver hkp://pool.sks-keyservers.net --refresh-keys Swift
-    gpg --verify /usr/local/src/swift-2.2-SNAPSHOT-2016-02-08-a-ubuntu15.10.tar.gz
-    tar xzf /usr/local/src/swift-2.2-SNAPSHOT-2016-02-08-a-ubuntu15.10.tar.gz -C /usr/local/src
-    echo 'PATH=$PATH:/usr/local/src/swift-2.2-SNAPSHOT-2016-02-08-a-ubuntu15.10/usr/bin' >> ~/.profile
+    gpg --verify /usr/local/src/#{swift_snapshot}.tar.gz
+    tar xzf /usr/local/src/#{swift_snapshot}.tar.gz -C /usr/local/src
+    echo 'PATH=$PATH:/usr/local/src/#{swift_snapshot}/usr/bin' >> ~/.profile
   EOH
 end

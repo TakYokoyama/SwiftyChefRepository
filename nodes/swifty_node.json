@@ -185,7 +185,7 @@
         "tcp": {
           "18889": {
             "address": "127.0.0.1",
-            "pid": 1818,
+            "pid": 2079,
             "name": "sshd"
           },
           "111": {
@@ -210,15 +210,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "82660",
-              "packets": "214",
+              "bytes": "84411219",
+              "packets": "15602",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "82660",
-              "packets": "214",
+              "bytes": "84411219",
+              "packets": "15602",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -228,16 +228,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "109136",
-              "packets": "543",
+              "bytes": "1067955",
+              "packets": "15180",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "146682",
-              "packets": "728",
+              "bytes": "97503140",
+              "packets": "70029",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -378,23 +378,23 @@
         "free": "0kB"
       },
       "total": "500628kB",
-      "free": "23076kB",
-      "buffers": "11764kB",
-      "cached": "224196kB",
-      "active": "288836kB",
-      "inactive": "144292kB",
-      "dirty": "1368kB",
+      "free": "17032kB",
+      "buffers": "8828kB",
+      "cached": "231820kB",
+      "active": "321988kB",
+      "inactive": "115804kB",
+      "dirty": "112kB",
       "writeback": "0kB",
-      "anon_pages": "197172kB",
-      "mapped": "23668kB",
-      "slab": "32064kB",
-      "slab_reclaimable": "20536kB",
-      "slab_unreclaim": "11528kB",
-      "page_tables": "3820kB",
+      "anon_pages": "197152kB",
+      "mapped": "22732kB",
+      "slab": "33400kB",
+      "slab_reclaimable": "21920kB",
+      "slab_unreclaim": "11480kB",
+      "page_tables": "3832kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "250312kB",
-      "committed_as": "353560kB",
+      "committed_as": "353436kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "7432kB",
       "vmalloc_chunk": "34359721980kB"
@@ -444,13 +444,13 @@
       },
       "/dev/sda1": {
         "kb_size": "40680236",
-        "kb_used": "1632340",
-        "kb_available": "39031512",
+        "kb_used": "1832684",
+        "kb_available": "38831168",
         "percent_used": "5%",
         "mount": "/",
         "total_inodes": "4904960",
-        "inodes_used": "96687",
-        "inodes_available": "4808273",
+        "inodes_used": "96774",
+        "inodes_available": "4808186",
         "inodes_percent_used": "2%",
         "fs_type": "ext4",
         "mount_options": [
@@ -481,8 +481,8 @@
       },
       "vagrant": {
         "kb_size": "243924880",
-        "kb_used": "164190740",
-        "kb_available": "79734140",
+        "kb_used": "164573900",
+        "kb_available": "79350980",
         "percent_used": "68%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -1089,11 +1089,11 @@
         "string_2": "vboxRev_105127"
       }
     },
-    "uptime_seconds": 241,
-    "uptime": "4 minutes 01 seconds",
-    "idletime_seconds": 209,
-    "idletime": "3 minutes 29 seconds",
-    "ohai_time": 1456237420.6344995,
+    "uptime_seconds": 417,
+    "uptime": "6 minutes 57 seconds",
+    "idletime_seconds": 372,
+    "idletime": "6 minutes 12 seconds",
+    "ohai_time": 1456243627.6134775,
     "chef_packages": {
       "ohai": {
         "version": "8.4.0",
